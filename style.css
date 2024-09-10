@@ -1,0 +1,435 @@
+@font-face {
+    font-family: Freight-Big-Pro-Light;
+    src: url(assets/Freight_Big_Pro/Freight\ Big\ Pro\ Light.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(248, 245, 245, 0.714);
+}
+
+
+.loader {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 7;
+}
+
+
+.loader-part2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 7;
+    background-color: rgb(88, 46, 26);
+
+
+}
+
+
+.loader-part3 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(88, 46, 26);
+
+}
+
+
+
+.loader video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 3;
+}
+
+.loader h1 {
+    font-weight: 100;
+    font-size: 5vw;
+    text-transform: uppercase;
+    line-height: 4vw;
+    font-family: Freight-Big-Pro-Light;
+    letter-spacing: -3px;
+    /* color: white; */
+    position: relative;
+    z-index: 7;
+
+}
+
+.loader h1 span {
+    color: rgba(246, 152, 109, 0.596);
+    /* text-transform: lowercase; */
+
+}
+
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(248, 245, 245, 0.714);
+    /* background-color: rgba(88, 46, 26, 0.834); */
+
+
+}
+
+nav{
+    height: 8vh;
+    width: 100%;
+    /* border-bottom: 1px solid white; */
+    display: flex;
+    /* background-color: rgba(243, 239, 239, 0.813); */
+
+
+}
+
+.nav-part1{
+    height: 100%;
+    width: 65%;
+    /* background-color: aqua; */
+}
+
+.nav-part1 p{
+    height: 100%;
+    width: 15%;
+    /* background-color: beige; */
+    font-family: Playwrite Cu;
+    font-weight: 200;
+    font-size: 1.6vw;
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+
+}
+
+.nav-part2{
+    height: 100%;
+    width: 30%;
+    /* background-color: olivedrab; */
+    display: flex;
+    justify-content: space-between;
+    font-family: Poppins;
+    font-weight: 300;
+    margin:  0.4% 4% 0 5%;
+}
+
+
+.nav-part2 a{
+    text-decoration: none;
+    display: flex;
+    text-transform: capitalize;
+    font-size: 1.15vw;
+    align-items: center;
+    color: black;
+    
+}
+
+
+.main-heading{
+    height: 85vh;
+    width: 100%;
+    /* background-color: rgba(243, 239, 239, 0.813); */
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+
+
+}
+
+
+.page1 h1 {
+    font-weight: 100;
+    font-size: 5vw;
+    text-transform: uppercase;
+    line-height: 4.4vw;
+    font-family: Freight-Big-Pro-Light;
+    letter-spacing: -3px;
+    padding-top: 2.5%;
+
+
+}
+
+.page1 h1 span {
+    color: rgb(231, 117, 65);
+}
+
+
+.page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #31459c;
+    /* color: white; */
+    background-color: rgba(248, 245, 245, 0.714);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.page2-img{
+    height: 90vh;
+    width: 80%;
+    position: absolute;
+    /* background-color: orange; */
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    border-radius: 55% 40% 30% 70% / 48% 30% 70% 40%;
+
+   
+}
+
+
+
+
+
+.page2 .box{
+    /* background-color: cadetblue; */
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+
+
+}
+
+.box .blur{
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 30%;
+    top: -1%;
+    /* background-color: rgb(36, 144, 58); */
+    background: linear-gradient(to right, rgb(88, 46, 26), rgb(88, 46, 26), rgb(88, 46, 26));
+    box-shadow: 10px 0 20px 30px rgb(88, 46, 26), -10px 0 20px 30px rgb(88, 46, 26);
+    z-index: 9;
+    border: none;
+}
+
+
+
+
+.box h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    position: relative;
+    z-index: 9;
+    font-family: Freight-Big-Pro-Light;
+    line-height: 4.4vw;
+
+
+}
+
+
+.box .marquee{
+    /* background-color: palevioletred; */
+    /* background-color: rgb(87, 37, 149); */
+    background-color: rgb(88, 46, 26);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0.3% 0 0.3% 1%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -38%) scaleY(0);
+    transition: all ease 0.5s;
+    /* opacity: 0; */
+
+}
+
+
+
+.box .marquee .marquee-moving{
+    /* background-color: greenyellow; */
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: moving-text;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+}
+
+.box .marquee .marquee-moving h5{
+    display: inline-block;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 0.9vw;
+    margin-right: 25px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all ease 0.5s;
+    transition-delay: 0.3s;
+    color:white;
+
+
+}
+
+
+@keyframes moving-text {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+    
+}
+
+
+.box:hover .marquee{
+    transform: translate(0, -38%) scaleY(1);
+
+
+
+}
+
+.box:hover .marquee h5{
+    opacity: 1;
+}
+
+.box:hover h2{
+    color: white;
+    /* color: rgb(235, 235, 8); */
+    font-style: oblique;
+
+}
+
+
+
+.page3 {
+    height: 270vh;
+    width: 100%;
+    background-color: rgba(248, 245, 245, 0.714);
+
+}
+
+.page3 .link-container{
+    height: 270vh;
+    width: 96%;
+    /* background-color: yellowgreen; */
+    display: grid;
+    gap: 3%;
+    justify-content: space-between;
+    margin: 2% 2%;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+
+.link{
+    height: 65vh;
+    width: 29vw;
+    background-color: rgb(88, 46, 26);
+    position: relative;
+
+}
+
+ 
+.link .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(88, 46, 26, 0.071);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Freight-Big-Pro-Light;
+    font-style: italic;
+    opacity: 0;
+}
+
+.overlay h2{
+    height: 100%;
+    width: 100%;
+    font-size: 3vw;
+    font-weight: 100;
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link .overlay h2:hover{
+    opacity: 4;
+    color: white;
+}
+.link .overlay:hover{
+    background-color: rgb(88, 46, 26);
+    opacity: 1;
+}
+
+
+
+
+
+
+.link img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.link:nth-child(2){
+    height: 40vh;
+}
+
+.link:nth-child(4){
+    margin-top: -10%;
+}
+.link:nth-child(5){
+    margin-top: -50%;
+    height: 70vh;
+}
+
+
+.link:nth-child(6){
+    margin-top: -10%;
+    height: 55vh;
+}
+
+.link:nth-child(7){
+    height: 55vh;
+    margin-top: -10%;
+}
+
+.link:nth-child(8){
+    margin-top: -42%;
+}
+
+.link:nth-child(9){
+    margin-top: -26%;
+}
+
+.link:nth-child(10){
+    opacity: 0;
+}
+
+.link:nth-child(11){
+    margin-top: -26%;
+}
+
+
